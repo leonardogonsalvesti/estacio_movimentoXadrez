@@ -40,13 +40,32 @@ int main()
             printf("Rainha: Esquerda\n");
             r++;
         }
-    } while (r <= 8);
-   
+    } while (r <= 8);   
+
+
+    // ------------------------
+    // Movimento do CAVALO (move duas casas em uma direção (horizontal ou vertical) e depois uma casa perpendicularmente, formando um "L")
+    // Estrutura: dois loops aninhados, sendo um deles obrigatoriamente um loop for
+    // ------------------------
+    
+    for (int i = 1; i <= 3; i++) {
+        printf("CAVALO: Direita\n");        
+        
+        while (i==3)
+        {
+           for ( int c = 0; c < 2; c++)
+           {
+            printf("CAVALO: Esquerda\n"); 
+           }
+           
+              break;
+        } 
+             
+        
+    }  
+    
+
     printf("FIM DO PROGRAMA. Saindo...\n");
-
-
-
-
     return 0;
 }
 
